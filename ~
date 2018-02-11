@@ -1,0 +1,3 @@
+factorial x = product [1..x] 
+ -- uses product which is a built in function of haskell to get the factorial 
+fact x = if x < 1 then 1 else fact (x-1)*x 
