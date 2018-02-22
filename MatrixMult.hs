@@ -8,8 +8,6 @@ import Data.List
 --utilizing the function tranpose that comes with the List import 
 -- this function takes in two parameters the matrix a and b and returns the product of a and b 
 mmult:: Num a => [[a]] -> [[a]] -> [[a]]
-mmult a _ = []
-mmult _ b = []
 mmult a b = [ [ sum $ zipWith (*) ar bc | bc <- (transpose b) ] | ar <- a ]
 
 
